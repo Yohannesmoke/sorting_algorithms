@@ -2,6 +2,9 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
 typedef struct listint_s
 {
     const int n;

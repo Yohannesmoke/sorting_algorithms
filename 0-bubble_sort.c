@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
 #include "sort.h"
 
 /**
@@ -10,22 +7,25 @@
 *
 *Return: swap
 */
-/**
-*bubble_sort - > will sort the list
-*@array: parameter 1
-*@size: parameter 2
-*Return: sort list
-*/
+
 void swap(int *xp, int *yp)
 {
 int temp = *xp;
 *xp = *yp;
 *yp = temp;
 }
+/**
+*bubble_sort - > will sort the list
+*@array: parameter 1
+*@size: parameter 2
+*Return: sort list
+*/
 void bubble_sort(int *array, size_t size)
 {
 int new_size = size;
 bool swapped;
+if (array == NULL || size < 2)
+return;
 while (new_size >= 0)
 {
 swapped = false;
