@@ -24,5 +24,7 @@ void print_list(const listint_t *list);
 
 void bubble_sort(int *array, size_t size);
 void selection_sort(int *array, size_t size);
+int _split(int *arr, int min, int last, size_t size);
+void quick_sort_array(int *arr, int min, int last, size_t size);
 
 #endif
